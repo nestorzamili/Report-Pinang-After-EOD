@@ -1,0 +1,1339 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,1490" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ucad="clr-namespace:UiPath.Core.Activities.DateModifications;assembly=UiPath.System.Activities" xmlns:ug="clr-namespace:UiPath.GSuite;assembly=UiPath.GSuite" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.GSuite</x:String>
+      <x:String>UiPath.GSuite.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities.Enums</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Core.Activities.DateModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>UiPath.GSuite.Activities.Contracts</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="78">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="main Pinang" sap:VirtualizedContainerService.HintSize="620,1425" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="proses_eod" />
+      <Variable x:TypeArguments="x:String" Name="jam_selesai_eod" />
+      <Variable x:TypeArguments="ui:DatabaseConnection" Name="db_connection" />
+      <Variable x:TypeArguments="s:DateTime" Name="kemarinTahun" />
+      <Variable x:TypeArguments="x:String" Name="kemarinString_tahun" />
+      <Variable x:TypeArguments="sd:DataTable" Name="total_disbursement" />
+      <Variable x:TypeArguments="sd:DataTable" Name="total_outstanding" />
+      <Variable x:TypeArguments="sd:DataTable" Name="debitur_dpk" />
+      <Variable x:TypeArguments="sd:DataTable" Name="debitur_npl" />
+      <Variable x:TypeArguments="sd:DataTable" Name="amount_dpk" />
+      <Variable x:TypeArguments="sd:DataTable" Name="amount_npl" />
+      <Variable x:TypeArguments="sd:DataTable" Name="total_loan" />
+      <Variable x:TypeArguments="x:String" Name="kemarinString_hari" />
+      <Variable x:TypeArguments="sd:DataTable" Name="overall_autodebet" />
+      <Variable x:TypeArguments="sd:DataTable" Name="closed_loan" />
+      <Variable x:TypeArguments="sd:DataTable" Name="daily_disburstment" />
+      <Variable x:TypeArguments="sd:DataTable" Name="daily_loan" />
+      <Variable x:TypeArguments="sd:DataTable" Name="daily_loanacct" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_pencairan" />
+      <Variable x:TypeArguments="x:String" Name="sekarangHari" />
+      <Variable x:TypeArguments="x:String" Name="sekarangTahun" />
+      <Variable x:TypeArguments="sd:DataTable" Name="number_debitur" />
+      <Variable x:TypeArguments="sd:DataTable" Name="all_active" />
+      <Variable x:TypeArguments="sd:DataTable" Name="account_settled" />
+      <Variable x:TypeArguments="sd:DataTable" Name="debitur_wo" />
+      <Variable x:TypeArguments="sd:DataTable" Name="debitur_2022" />
+      <Variable x:TypeArguments="sd:DataTable" Name="amount_wo" />
+      <Variable x:TypeArguments="sd:DataTable" Name="writeoff_2022" />
+      <Variable x:TypeArguments="sd:DataTable" Name="disburstment_2020" />
+      <Variable x:TypeArguments="sd:DataTable" Name="disb_2021" />
+      <Variable x:TypeArguments="sd:DataTable" Name="bunga_2022" />
+      <Variable x:TypeArguments="sd:DataTable" Name="total_bunga" />
+      <Variable x:TypeArguments="sd:DataTable" Name="fee_brilink" />
+      <Variable x:TypeArguments="sd:DataTable" Name="brilink_untilnow" />
+      <Variable x:TypeArguments="sd:DataTable" Name="brilink_2022" />
+      <Variable x:TypeArguments="sd:DataTable" Name="disbursment_2022" />
+      <Variable x:TypeArguments="sd:DataTable" Name="detail_disbursment" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_disburstment" />
+      <Variable x:TypeArguments="sd:DataTable" Name="detail_outstanding" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_outstanding" />
+      <Variable x:TypeArguments="sd:DataTable" Name="detail_noadpk" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_noadpk" />
+      <Variable x:TypeArguments="sd:DataTable" Name="detail_noanpl" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_noanpl" />
+      <Variable x:TypeArguments="sd:DataTable" Name="detail_amountdpk" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_amountdpk" />
+      <Variable x:TypeArguments="sd:DataTable" Name="detail_amountnpl" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_amountnpl" />
+      <Variable x:TypeArguments="sd:DataTable" Name="detail_activeacc" />
+      <Variable x:TypeArguments="sd:DataTable" Name="total_loanacc" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_closeacc" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_activeacc" />
+      <Variable x:TypeArguments="x:String" Name="hapus_ini" />
+      <Variable x:TypeArguments="sd:DataTable" Name="total_pengembalian_pokok" />
+      <Variable x:TypeArguments="sd:DataTable" Name="daily_pengembalian_pokok" />
+      <Variable x:TypeArguments="x:String" Default="1v73QK2B4GuLy80OlZQqxCiAXnhXIK_a2hHjgzUasavc" Name="spreadshet_id" />
+      <Variable x:TypeArguments="x:String" Default="Test Robot Pinang" Name="testing_sheet" />
+      <Variable x:TypeArguments="x:String" Default="Dsn=PostgreSQLPinang;uid=finread;pwd=finread" Name="db_connection_1" />
+      <Variable x:TypeArguments="x:String" Default="System.Data.Odbc" Name="provider_name" />
+      <Variable x:TypeArguments="sd:DataTable" Name="daily_pokok_untilnow" />
+      <Variable x:TypeArguments="sd:DataTable" Name="information_autodebet" />
+      <Variable x:TypeArguments="sd:DataTable" Name="total_numberdebitur" />
+      <Variable x:TypeArguments="sd:DataTable" Name="num_ofdebitur" />
+      <Variable x:TypeArguments="x:String" Name="kemarin_report" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtTable_gsheet" />
+      <Variable x:TypeArguments="x:String" Default="1z9Vn90LZUy2SLwz6sil5BBqC3qzBu8Er32Sk7k8Folc" Name="templateSheetID" />
+      <Variable x:TypeArguments="x:String" Default="Template" Name="templateSheet" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtReport9" />
+      <Variable x:TypeArguments="x:String" Name="cellBuatBesok" />
+      <Variable x:TypeArguments="x:String" Default="EOD PINANG REPORT" Name="reportSheet" />
+      <Variable x:TypeArguments="sd:DataTable" Name="coloum_range" />
+      <Variable x:TypeArguments="x:Int32" Name="coloum_count" />
+      <Variable x:TypeArguments="x:String" Name="coloum_count_final" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_dis_pkss" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_out_pkss" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_dis_amount_pkss" />
+      <Variable x:TypeArguments="sd:DataTable" Name="breakdown_out_amount_pkss" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Database Activities" sap:VirtualizedContainerService.HintSize="558,81" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:DatabaseConnect DisplayName="Connect to database" sap:VirtualizedContainerService.HintSize="400,52" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Dsn=PostgreSQLPinang;uid=finread;pwd=finread" DatabaseConnection="[db_connection]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:DatabaseConnect>
+      <Sequence DisplayName="Set Tanggal" sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ModifyDate CustomDateFormat="yyyy-MM-dd" DisplayName="Modify Date" FormatAsText="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ModifyDate_1" OutDate="[kemarinTahun]" OutText="[kemarinString_tahun]" PredefinedDateFormat="MM_dd_yyyy" SourceDate="[Now]" UseCustomDateFormat="True">
+          <ui:ModifyDate.Body>
+            <ActivityAction>
+              <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ucad:AddSubtractTimePeriodDateModification DisplayName="Add/Subtract Time Period" sap:VirtualizedContainerService.HintSize="382,180" sap2010:WorkflowViewState.IdRef="AddSubtractTimePeriodDateModification_1" Operation="Subtract" Value="1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ucad:AddSubtractTimePeriodDateModification>
+              </Sequence>
+            </ActivityAction>
+          </ui:ModifyDate.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ModifyDate>
+        <ui:ModifyDate OutDate="{x:Null}" CustomDateFormat="dd-MM-yyyy" DisplayName="Modify Date" FormatAsText="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ModifyDate_2" OutText="[kemarinString_hari]" SourceDate="[Now]" UseCustomDateFormat="True">
+          <ui:ModifyDate.Body>
+            <ActivityAction>
+              <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ucad:AddSubtractTimePeriodDateModification DisplayName="Add/Subtract Time Period" sap:VirtualizedContainerService.HintSize="382,51" sap2010:WorkflowViewState.IdRef="AddSubtractTimePeriodDateModification_2" Operation="Subtract" Value="1" />
+              </Sequence>
+            </ActivityAction>
+          </ui:ModifyDate.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ModifyDate>
+        <ui:ModifyDate OutDate="{x:Null}" CustomDateFormat="dd-MM-yyyy" DisplayName="Modify Date" FormatAsText="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ModifyDate_3" OutText="[sekarangHari]" SourceDate="[Now]" UseCustomDateFormat="True">
+          <ui:ModifyDate.Body>
+            <ActivityAction>
+              <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </ActivityAction>
+          </ui:ModifyDate.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ModifyDate>
+        <ui:ModifyDate OutDate="{x:Null}" CustomDateFormat="yyyy-MM-dd" DisplayName="Modify Date" FormatAsText="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ModifyDate_4" OutText="[sekarangTahun]" SourceDate="[Now]" UseCustomDateFormat="True">
+          <ui:ModifyDate.Body>
+            <ActivityAction>
+              <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </ActivityAction>
+          </ui:ModifyDate.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ModifyDate>
+        <ui:ModifyDate OutDate="{x:Null}" CustomDateFormat="dd MMMM yyyy" DisplayName="Modify Date" FormatAsText="True" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ModifyDate_5" OutText="[kemarin_report]" SourceDate="[Now]" UseCustomDateFormat="True">
+          <ui:ModifyDate.Body>
+            <ActivityAction>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,144" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ucad:AddSubtractTimePeriodDateModification DisplayName="Add/Subtract Time Period" sap:VirtualizedContainerService.HintSize="382,51" sap2010:WorkflowViewState.IdRef="AddSubtractTimePeriodDateModification_3" Operation="Subtract" Value="1" />
+              </Sequence>
+            </ActivityAction>
+          </ui:ModifyDate.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ModifyDate>
+      </Sequence>
+      <Parallel sap:VirtualizedContainerService.HintSize="14824,136" sap2010:WorkflowViewState.IdRef="Parallel_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[total_disbursement]" DisplayName="Total Disbursement Until Now" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" ProviderName="[provider_name]" Sql="select &#x9;sum(dis_amt) filter (where dis_shdl_date &lt;= current_date()) TOTAL_DISBURSEMENT_Until_Now from tbaadm.lam;" TimeoutMS="200000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[total_pengembalian_pokok]" DisplayName="Total Pengembalian Pokok" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_2" ProviderName="[provider_name]" Sql="select TOTAL_DISBURSEMENT_Until_Now - total_outstanding as total_pengembalian_pokok from (select sum(dis_amt) TOTAL_DISBURSEMENT_Until_Now, sum(floor(abs(clr_bal_amt))) as total_outstanding from tbaadm.lam a join tbaadm.gam b on a.acid = b.acid) Total_pengembalian_pokok;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[daily_pengembalian_pokok]" DisplayName="Daily Pengembalian Pokok" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_3" ProviderName="[provider_name]" Sql="[&quot;Select 'Daily_Pengembalian_Pokok',('&quot;+kemarinString_tahun+&quot;'),sum(tran_amt) amount from tbaadm.htd where ((tran_particular = 'Loan Recovery From : 20601009196309') or (tran_particular = 'Loan Payoff Payment')) And part_tran_type ='C' and tran_date = ('&quot;+kemarinString_tahun+&quot;');&quot;]" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[daily_pokok_untilnow]" DisplayName="Daily Pokok Until Now" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_49" ProviderName="[provider_name]" Sql="Select&#xA;&#x9;'Total_Pengembalian_Pokok' keterangan,&#xA;&#x9;'UNTIL NOW' period,&#xA;&#x9;sum(tran_amt) amount&#xA;From&#xA;&#x9;tbaadm.htd&#xA;Where&#xA;&#x9;tran_particular In ('Loan Recovery From : 20601009196309',&#xA;&#x9;'Loan Payoff Payment')&#xA;&#x9;And part_tran_type = 'C'&#xA;&#x9;And tran_date between '2018-12-01' and current_date()  ---TANGGAL INI JANGAN DI GANTI BIAR TETAP 2018-12-01&#xA;&#x9;And acid Not In ('994878','99770');" TimeoutMS="40000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[total_outstanding]" DisplayName="Total Outstanding" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_4" ProviderName="[provider_name]" Sql="Select sum(floor(abs(clr_bal_amt)))  outstanding_amount From tbaadm.gam a left Join tbaadm.gac b On a.acid = b.acid Where schm_type = 'LAA' and clr_bal_amt &lt; 0 and entity_cre_flg = 'Y' and del_flg != 'Y' and chrge_off_flg ='N' ;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[debitur_dpk]" DisplayName="Total Debitur DPK" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_5" ProviderName="[provider_name]" Sql="Select COUNT(1) TOTAL_DPK_COUNT From TBAADM.ACD Where main_classification_user = '002' AND entity_cre_flg = 'Y' AND del_flg != 'Y' And b2k_id In (Select acid From tbaadm.gam Where acct_cls_flg != 'Y');" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[debitur_npl]" DisplayName="Total Debitur NPL" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_6" ProviderName="[provider_name]" Sql="select count(*) as Total_NoA_NPL FROM TBAADM.GAM A JOIN TBAADM.ACD B ON A.ACID = B.B2K_ID AND MAIN_CLASSIFICATION_SYSTEM NOT IN ('001','002') JOIN TBAADM.GAC C ON A.ACID = C.ACID AND CHRGE_OFF_FLG ='N' WHERE B.ENTITY_CRE_FLG = 'Y' AND B.DEL_FLG != 'Y' AND ACCT_CLS_FLG != 'Y';" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[amount_dpk]" DisplayName="Total Amount DPK" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_7" ProviderName="[provider_name]" Sql="SELECT sum(floor(abs(clr_bal_amt))) as total_Amount_DPK from tbaadm.gam a join tbaadm.acd b on a.acid = b.b2k_id and main_classification_system in ('002') join tbaadm.gac c on a.acid = c.acid and chrge_off_flg ='N' where b.entity_cre_flg = 'Y' AND b.del_flg != 'Y' and acct_cls_flg != 'Y';" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[amount_npl]" DisplayName="Amount NPL" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_8" ProviderName="[provider_name]" Sql="select Total_amount_NPL - chrge_off_principal as total_amount_NPL from (select sum(floor(abs(clr_bal_amt)))  Total_amount_NPL, sum(chrge_off_principal) chrge_off_principal from tbaadm.gam a join tbaadm.acd b on a.acid = b.b2k_id and main_classification_system not in ('001','002') join tbaadm.gac c on a.acid = c.acid join tbaadm.cot d on a.acid = d.acid where b.entity_cre_flg = 'Y' AND b.del_flg != 'Y' and acct_cls_flg != 'Y' );" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[total_loan]" DisplayName="Total Number Loan Account" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_9" ProviderName="[provider_name]" Sql="select count(1) from tbaadm.gam where schm_type = 'LAA';" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[information_autodebet]" DisplayName="Information Autodebet" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_10" ProviderName="[provider_name]" Sql="[&quot;Select UPPER(NVL(SUBSTR(status,0,1),'S')) STATUS,status_code,count(1) from custom.fstl where transfer_type = 'AutoPay' and transaction_date_time = to_date('&quot;+kemarinString_hari+&quot;','DD-MM-YYYY') group by UPPER(NVL(SUBSTR(status,0,1),'S')),status_code;&quot;]" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[overall_autodebet]" DisplayName="Overall Autodebet" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_11" ProviderName="[provider_name]" Sql="Select UPPER(NVL(SUBSTR(status,0,1),'S')) STATUS,status_code,count(1) from custom.fstl Where transfer_type = 'AutoPay' group by UPPER(NVL(SUBSTR(status,0,1),'S')),status_code;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[closed_loan]" DisplayName="Total Number Closed Loan acc" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_12" ProviderName="[provider_name]" Sql="SELECT COUNT(1) FROM TBAADM.GAM WHERE ACCT_CLS_FLG = 'Y' AND SCHM_TYPE = 'LAA';" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[daily_disburstment]" DisplayName="Daily amount disburstment" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_13" ProviderName="[provider_name]" Sql="[&quot;SELECT SUM(DIS_AMT) FROM TBAADM.LAM WHERE DIS_SHDL_DATE = TO_DATE('&quot;+kemarinString_hari+&quot;','DD-MM-YYYY');&quot;]" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[daily_loan]" DisplayName="Daily Amount Loan Payment" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_14" ProviderName="[provider_name]" Sql="[&quot;select sum(amt) TOTAL_LOAN_PAYMENT from (select sum(flow_amt) amt from tbaadm.ltd where flow_id in ('COLL','PDCOL') and entity_cre_flg = 'Y' and del_flg = 'N' and reversal_flg != 'Y' and reversed_flg != 'Y' and tran_date = to_date('&quot;+kemarinString_hari+&quot;','DD-MM-YYYY') union select sum(flow_amt) amt from tbaadm.ltdh where flow_id in ('COLL','PDCOL') and entity_cre_flg = 'Y' and del_flg = 'N' and reversal_flg != 'Y' and reversed_flg != 'Y'and tran_date = to_date('&quot;+kemarinString_hari+&quot;','DD-MM-YYYY'));&quot;]" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[daily_loanacct]" DisplayName="Daily Count Created Loan Acct" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_15" ProviderName="[provider_name]" Sql="[&quot;SELECT COUNT(1) as Daily_of_created_loanacct FROM TBAADM.GAM WHERE SCHM_TYPE = 'LAA' AND ACCT_OPN_DATE = TO_DATE('&quot;+kemarinString_hari+&quot;','DD-MM-YYYY');&quot;]" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_pencairan]" DisplayName="Breakdown Pencairan" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_16" ProviderName="[provider_name]" Sql="[&quot;Select &#x9;Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type, Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type,&#x9;count(foracid) total_NOA, sum(dis_amt) total_disbursement From tbaadm.gam a Join tbaadm.gac b On a.acid = b.acid Join tbaadm.lam c On a.acid = c.acid Where dis_shdl_date = '&quot;+kemarinString_tahun+&quot;' Group By schm_code,account_type Order By product_type;&quot;]" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[number_debitur]" DisplayName="Number of Debitur" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_17" ProviderName="[provider_name]" Sql="[&quot;SELECT COUNT(1) DEBITUR FROM TBAADM.LRS WHERE NEXT_DMD_DATE like '&quot;+sekarangTahun+&quot;%' AND DEL_FLG = 'N' AND ENTITY_CRE_FLG = 'Y';&quot;]" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[total_numberdebitur]" DisplayName="Total Number of Debitur" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_50" ProviderName="[provider_name]" Sql="[&quot;select SUM(FLOW_AMT) TOTAL_AMOUNT FROM TBAADM.LRS WHERE NEXT_DMD_DATE like '&quot;+sekarangTahun+&quot;%' AND DEL_FLG = 'N' AND ENTITY_CRE_FLG = 'Y';&quot;]" TimeoutMS="18000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[num_ofdebitur]" DisplayName="Num of  Debitur" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_51" ProviderName="[provider_name]" Sql="select main_classification_system,count(main_classification_system) as value,sum(abs(clr_bal_amt)) as Amt_Outstand &#x9;from tbaadm.gam a left join tbaadm.acd b on a.acid = b.b2k_id left join tbaadm.gac c on a.acid = c.acid&#x9;where main_classification_system is not null and chrge_off_flg ='N' and clr_bal_amt &lt; 0 and schm_type = 'LAA' group by main_classification_system order by main_classification_system;" TimeoutMS="220000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[all_active]" DisplayName="All Active Account" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_18" ProviderName="[provider_name]" Sql="Select count(1) From tbaadm.gam a left Join tbaadm.gac b On a.acid=b.acid Where chrge_off_flg = 'N' and clr_bal_amt &lt; 0 and schm_type = 'LAA';" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[account_settled]" DisplayName="Account Settled" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_19" ProviderName="[provider_name]" Sql="SELECT COUNT(1) FROM TBAADM.GAM WHERE ACCT_CLS_FLG = 'Y' AND SCHM_TYPE = 'LAA';" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[debitur_wo]" DisplayName="Total Debitur Write Off" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_20" ProviderName="[provider_name]" Sql="Select count(foracid) From tbaadm.cot a left Join tbaadm.gam b On a.acid = b.acid left Join tbaadm.gac c On a.acid = c.acid And a.acid != '996675' where chrge_off_flg='Y' and chrge_off_date between '2018-01-01 00:00:00' and current_date() ;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[amount_wo]" DisplayName="Total Amount Write Off" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_21" ProviderName="[provider_name]" Sql="select sum(floor(abs(clr_bal_amt)))  from tbaadm.cot a left join tbaadm.gam b on a.acid = b.acid left join tbaadm.gac c on a.acid = c.acid and a.acid != '996675' where chrge_off_flg='Y' and chrge_off_date between '2018-01-01 00:00:00' and current_date() ; " TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[debitur_2022]" DisplayName="Total Debitur 2022" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_22" ProviderName="[provider_name]" Sql="select count(foracid) from tbaadm.cot a left join tbaadm.gam b on a.acid = b.acid left join tbaadm.gac c on a.acid = c.acid and a.acid != '996675' where chrge_off_flg='Y' and chrge_off_date between '2022-01-01 00:00:00' and current_date() ;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[writeoff_2022]" DisplayName="Amount Write Off 2022" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_23" ProviderName="[provider_name]" Sql="select sum(floor(abs(clr_bal_amt))) from tbaadm.cot a left join tbaadm.gam b on a.acid = b.acid left join tbaadm.gac c on a.acid = c.acid and a.acid != '996675' where chrge_off_flg='Y' and chrge_off_date between '2022-01-01 00:00:00' and current_date() ;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[disburstment_2020]" DisplayName="Total Disburstment 1 Januari 2020" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_24" ProviderName="[provider_name]" Sql="[&quot;select sum(dis_amt) TOTAL_DISBURSEMENT from tbaadm.lam where dis_shdl_date between to_date ('01-01-2020','DD-MM-YYYY') and to_date('&quot;+kemarinString_hari+&quot;','DD-MM-YYYY');&quot;]" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[disb_2021]" DisplayName="Amt Disb 2021" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_25" ProviderName="[provider_name]" Sql="select sum(sanct_lim) as amt_disb_now from tbaadm.gam where acct_opn_date between '2023-01-01 00:00:00' and current_date();" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[bunga_2022]" DisplayName="Bunga 2022" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_26" ProviderName="[provider_name]" Sql="select (a.tran_date_bal - (select a.tran_date_bal from tbaadm.eab a inner join tbaadm.gam b on a.acid = b.acid where eod_date = '2021-12-31 00:00:00' and foracid ='401917691911' and acct_cls_flg ='N')) as tran_date_bal_new from tbaadm.eab a inner join tbaadm.gam b on a.acid = b.acid where current_date() between a.eod_date and a.END_EOD_DATE and foracid ='401917691911' and acct_cls_flg ='N'; " TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[total_bunga]" DisplayName="Total Bunga" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_27" ProviderName="[provider_name]" Sql="Select sum(floor(a.tran_date_bal)) tran_dat_bal From tbaadm.eab a inner Join tbaadm.gam b On a.acid=b.acid Where current_date() between a.eod_date And a.END_EOD_DATE And foracid ='401917691911' and acct_cls_flg ='N' Group By schm_type,acct_name,foracid,eod_date;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[brilink_untilnow]" DisplayName="Pengembalian Fee Brilink Until Now" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_28" ProviderName="[provider_name]" Sql="select &#x9;sum(fee_amt_collected) as Total_Fee_Collected_Until_Now from tbaadm.gam a join tbaadm.fe_chat b on a.acid = b.entity_id&#x9;where schm_code ='PYLTR' and a.rcre_time between '2021-10-17:00:00:00' and current_date() group by schm_code;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[brilink_2022]" DisplayName="Fee Brilink 2022" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_29" ProviderName="[provider_name]" Sql="select &#x9;sum(fee_amt_collected) filter ( where a.rcre_time like '2022%') as pengembalian_fee_2022 from tbaadm.gam a join tbaadm.fe_chat b on a.acid = b.entity_id where schm_code ='PYLTR' and a.rcre_time between '2021-10-17:00:00:00' and current_date() group by schm_code;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[disbursment_2022]" DisplayName="Total Disburstment 2022" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_30" ProviderName="[provider_name]" Sql="select &#x9;sum(dis_amt) filter ( where dis_shdl_date &gt; '2022-12-31') as Total_Disbursement_2023 from tbaadm.lam;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[detail_disbursment]" DisplayName="Detail Total Disburstment" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_31" ProviderName="[provider_name]" Sql="SELECT schm_code,SUM(DIS_AMT) FROM TBAADM.LAM a join tbaadm.gam b on a.acid=b.acid group by schm_code;" TimeoutMS="220000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_disburstment]" DisplayName="Breakdown Disburstment" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_32" ProviderName="[provider_name]" Sql="Select Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type, Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type, sum(floor(sanct_lim)) total_disbursement From&#x9;tbaadm.gam a left Join tbaadm.gac b On a.acid = b.acid Where acct_opn_date &lt;= current_date() And schm_type ='LAA' Group By product_type,account_type Order By product_type;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[detail_outstanding]" DisplayName="Detail Outstanding" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_33" ProviderName="[provider_name]" Sql="select schm_code,sum(abs(clr_bal_amt)) OUTSTANDING_AMT from tbaadm.gam a left join tbaadm.gac b on a.acid = b.acid where schm_type = 'LAA' and clr_bal_amt &lt; 0 and entity_cre_flg = 'Y' and del_flg != 'Y' and chrge_off_flg ='N' group by schm_code;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_outstanding]" DisplayName="Breakdown Outstanding" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_34" ProviderName="[provider_name]" Sql="Select Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type, Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type, sum(floor(abs(clr_bal_amt)))  outstanding_amount From tbaadm.gam a left Join tbaadm.gac b On a.acid = b.acid Where clr_bal_amt &lt; 0 And entity_cre_flg = 'Y' and del_flg != 'Y' and chrge_off_flg ='N' Group By product_type,account_type Order By product_type;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[detail_noadpk]" DisplayName="Detail NOA DPK" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_35" ProviderName="[provider_name]" Sql="SELECT schm_code,count(*) total_dpk_count FROM TBAADM.ACD a join tbaadm.gam b on a.b2k_id = b.acid WHERE main_classification_user = '002' AND a.entity_cre_flg = 'Y' AND a.del_flg != 'Y' and b2k_id in (select acid from tbaadm.gam where acct_cls_flg != 'Y') group by schm_code;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_noadpk]" DisplayName="Breakdown NOA DPK" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_36" ProviderName="[provider_name]" Sql="Select&#x9;Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type, Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type, count(*) As total_Noa_DPK From tbaadm.gam a Join tbaadm.acd b On a.acid = b.b2k_id And main_classification_system = '002' Join tbaadm.gac c On a.acid = c.acid And chrge_off_flg ='N' Where b.entity_cre_flg = 'Y' AND b.del_flg != 'Y' and acct_cls_flg != 'Y' group by product_type,account_type;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[detail_noanpl]" DisplayName="Detail NOA NPL" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_37" ProviderName="[provider_name]" Sql="Select schm_code,abs(jumlah) From (&#xA;Select b.schm_code ,Case When b.jumlah_wo Is null  Then (jumlah_npl - 0)  When a.jumlah_npl Is null Then (0 - jumlah_wo)  Else (jumlah_npl - jumlah_wo)  End As jumlah From &#xA;(Select schm_code,COUNT(1) As jumlah_npl From TBAADM.ACD a Join tbaadm.gam b On a.b2k_id=b.acid Where (main_classification_user,sub_classification_user)&#xA;In (Select main_asset_class,sub_asset_class From tbaadm.aip Where past_due_flg = 'Y' and entity_cre_flg = 'Y' and del_flg != 'Y')&#xA;And a.entity_cre_flg = 'Y' AND a.del_flg != 'Y'&#xA;And b2k_id In (Select acid From tbaadm.gam Where acct_cls_flg != 'Y') group by schm_code) a right join  &#xA;(Select schm_code,count(*) As jumlah_wo From tbaadm.lam a Join tbaadm.gam b On a.acid = b.acid Where chrge_off_flg = 'Y' group by schm_code) &#xA;b On a.schm_code=b.schm_code );" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_noanpl]" DisplayName="Breakdown NOA NPL" sap:VirtualizedContainerService.HintSize="334,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_38" ProviderName="[provider_name]" Sql="Select Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type, Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type, COUNT(*) As TOTAL_NOA_NPL From TBAADM.GAM A Join TBAADM.ACD B On A.ACID = B.B2K_ID And MAIN_CLASSIFICATION_SYSTEM Not In ('001','002') Join TBAADM.GAC C On A.ACID = C.ACID And CHRGE_OFF_FLG ='N' Where B.ENTITY_CRE_FLG = 'Y' AND B.DEL_FLG != 'Y' AND ACCT_CLS_FLG != 'Y' GROUP BY PRODUCT_TYPE,ACCOUNT_TYPE;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[detail_amountdpk]" DisplayName="Detail Amount DPK" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_39" ProviderName="[provider_name]" Sql="select schm_code,nvl(sum(abs(clr_bal_amt)),0) OUTSTANDING_AMT from tbaadm.gam where schm_type = 'LAA' and clr_bal_amt &lt; 0 and entity_cre_flg = 'Y' and del_flg != 'Y' and acid in (SELECT b2k_id FROM TBAADM.ACD WHERE main_classification_user = '002' AND entity_cre_flg = 'Y' AND del_flg != 'Y') group by schm_code;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_amountdpk]" DisplayName="Breadkdown Amount DPK" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_40" ProviderName="[provider_name]" Sql="Select product_type,account_type,Total_amount_NPL - chrge_off_principal As total_amount_NPL From ( Select Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type, Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type, sum(floor(abs(clr_bal_amt))) Total_amount_NPL, sum(chrge_off_principal) chrge_off_principal From tbaadm.gam a Join tbaadm.acd b On a.acid = b.b2k_id And main_classification_system Not In ('001','002') Join tbaadm.gac c On a.acid = c.acid Join tbaadm.cot d On a.acid = d.acid Where b.entity_cre_flg = 'Y' AND b.del_flg != 'Y' and acct_cls_flg != 'Y' group by product_type,account_type);" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[detail_amountnpl]" DisplayName="Detail Amount NPL" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_41" ProviderName="[provider_name]" Sql="select schm_code,abs(jumlah) from (select b.schm_code ,case when b.jumlah_wo is null  then (jumlah_npl - 0)  when a.jumlah_npl is null then (0 - jumlah_wo)  else (jumlah_npl - jumlah_wo)  end as jumlah from (select schm_code,nvl(sum(abs(clr_bal_amt)),0) as jumlah_npl from tbaadm.gam where schm_type = 'LAA' and clr_bal_amt &lt; 0 and entity_cre_flg = 'Y' and del_flg != 'Y' and acid in (SELECT b2k_id FROM TBAADM.ACD WHERE (main_classification_user,sub_classification_user) in (select main_asset_class,sub_asset_class from tbaadm.aip where past_due_flg = 'Y' and entity_cre_flg = 'Y' and del_flg != 'Y') AND entity_cre_flg = 'Y' AND del_flg != 'Y') group by schm_code) a right join (select schm_code,sum(chrge_off_principal) as jumlah_wo from tbaadm.cot a join tbaadm.gam b on a.acid = b.acid where a.chrge_off_date is not null group by schm_code)b on a.schm_code=b.schm_code);&#xA;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_amountnpl]" DisplayName="Breakdown Amount NPL" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_42" ProviderName="[provider_name]" Sql="select product_type,account_type,Total_amount_NPL - chrge_off_principal as total_amount_NPL from (select case schm_code when 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' end as product_type, case free_text_24 when 'PP' then 'PRIVILAGE' when 'P' then 'NON_PRIVILAGE' when 'NP' then 'NON_PAYROLL' else 'NON_PRIVILAGE' end account_type, sum(floor(abs(clr_bal_amt))) Total_amount_NPL, sum(chrge_off_principal) chrge_off_principal from tbaadm.gam a join tbaadm.acd b on a.acid = b.b2k_id and main_classification_system not in ('001','002') join tbaadm.gac c on a.acid = c.acid join tbaadm.cot d on a.acid = d.acid where b.entity_cre_flg = 'Y' AND b.del_flg != 'Y' and acct_cls_flg != 'Y' group by product_type,account_type);" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[detail_activeacc]" DisplayName="Detail Active Account" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_43" ProviderName="[provider_name]" Sql="Select schm_code,count(1) from tbaadm.gam a left join tbaadm.gac b on a.acid=b.acid where chrge_off_flg = 'N' and clr_bal_amt &lt; 0 and schm_type = 'LAA' group by schm_code;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[total_loanacc]" DisplayName="Total Loan Account" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_44" ProviderName="[provider_name]" Sql="select count(*) from tbaadm.gam where schm_type = 'LAA' ;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_closeacc]" DisplayName="Breakdown Close Loan Account" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_45" ProviderName="[provider_name]" Sql="Select &#x9;Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type, Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type, count(*) As value From tbaadm.gac a Join tbaadm.gam b On a.acid = b.acid And acct_cls_flg = 'Y' Where schm_type = 'LAA' group by schm_code,account_type;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_activeacc]" DisplayName="Breakdown Active Loan Account" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_46" ProviderName="[provider_name]" Sql="Select&#x9;Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type, Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type, count(*) As value From tbaadm.gac a Join tbaadm.gam b On a.acid = b.acid And acct_cls_flg = 'N' Where schm_type = 'LAA' group by schm_code,account_type;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_dis_pkss]" DisplayName="Breakdown Disbursment PKSS" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_52" ProviderName="[provider_name]" Sql="Select&#xA;&#x9;Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type,&#xA;&#x9;Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type,&#xA;&#x9;count(foracid) total_Noa,&#xA;&#x9;sum(floor(sanct_lim)) total_disbursement&#xA;From&#xA;&#x9;tbaadm.gam a&#xA;left Join tbaadm.gac b On&#xA;&#x9;a.acid = b.acid&#xA;Where&#xA;&#x9;acct_opn_date &lt; current_date() And lower(free_text_8) similar To '%pkss%|%prima karya sarana sejahtera%' and schm_code ='PNANG'&#xA;Group By&#xA;&#x9;product_type,account_type&#xA;&#x9;Order By product_type;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_out_pkss]" DisplayName="Breakdown Outsatnding PKSS" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_53" ProviderName="[provider_name]" Sql="Select &#xA;Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type,&#xA;Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type,&#xA;count(foracid) total_noa,&#xA;sum(floor(abs(clr_bal_amt)))  outstanding_amount&#xA;From tbaadm.gam a &#xA;left Join tbaadm.gac b On a.acid = b.acid&#xA;&#x9;left Join tbaadm.eab c On a.acid = c.acid&#xA; Where entity_cre_flg = 'Y' and del_flg != 'Y' and chrge_off_flg ='N' and&#xA; current_date() between eod_date And end_eod_date And lower(free_text_8) similar To '%pkss%|%prima karya sarana sejahtera%' and schm_code ='PNANG'&#xA;&#x9;Group By product_type,account_type Order By product_type;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_dis_amount_pkss]" DisplayName="Breakdown Disbursment Amount PKSS" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_54" ProviderName="[provider_name]" Sql="Select&#xA;&#x9;Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type,&#xA;&#x9;Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type,&#xA;&#x9;sum(floor(sanct_lim)) total_disbursement&#xA;From&#xA;&#x9;tbaadm.gam a&#xA;left Join tbaadm.gac b On&#xA;&#x9;a.acid = b.acid&#xA;Where&#xA;&#x9;acct_opn_date &lt; current_date() And lower(free_text_8) similar To '%pkss%|%prima karya sarana sejahtera%' and schm_code ='PNANG'&#xA;Group By&#xA;&#x9;product_type,account_type&#xA;&#x9;Order By product_type;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:ExecuteQuery>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" ConnectionString="[db_connection_1]" DataTable="[breakdown_out_amount_pkss]" DisplayName="Breakdown Outstanding Amount PKSS" sap:VirtualizedContainerService.HintSize="200,89" sap2010:WorkflowViewState.IdRef="ExecuteQuery_55" ProviderName="[provider_name]" Sql="Select &#xA;Case schm_code When 'PNANG' then 'PINANG KONSUMER' when 'PYLTR' then 'PINANG PAY LATER' when 'PLNEW' then 'PINANG PAY LATER' when 'PNNEW' then 'PINANG BPJS' end as product_type,&#xA;Case free_text_24 When 'PP' then 'PRIVILAGE' when 'P' then 'PAYROLL' when 'NP' then 'NON_PAYROLL' else 'PAYROLL' end account_type,&#xA;sum(floor(abs(clr_bal_amt)))  outstanding_amount&#xA;From tbaadm.gam a &#xA;left Join tbaadm.gac b On a.acid = b.acid&#xA;&#x9;left Join tbaadm.eab c On a.acid = c.acid&#xA; Where entity_cre_flg = 'Y' and del_flg != 'Y' and chrge_off_flg ='N' and&#xA; current_date() between eod_date And end_eod_date And lower(free_text_8) similar To '%pkss%|%prima karya sarana sejahtera%' and schm_code ='PNANG'&#xA;&#x9;Group By product_type,account_type Order By product_type;" TimeoutMS="180000">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+      </Parallel>
+      <ui:DatabaseDisconnect DatabaseConnection="[db_connection]" DisplayName="Disconnect from database" sap:VirtualizedContainerService.HintSize="400,25" sap2010:WorkflowViewState.IdRef="DatabaseDisconnect_1" />
+    </Sequence>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_121">
+          <Sequence DisplayName="Testing Query" sap:VirtualizedContainerService.HintSize="496,81" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:OutputDataTable DataTable="[breakdown_pencairan]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="338,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[hapus_ini]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:OutputDataTable>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="338,85" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[hapus_ini]">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:MessageBox>
+          </Sequence>
+        </Sequence>
+      </ui:CommentOut.Body>
+    </ui:CommentOut>
+    <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" ContinueOnError="{x:Null}" Folder="{x:Null}" KeyPath="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" CredentialID="158233483984-9rq116pqv1onqv6bu5hn2mt8dm7ckorp.apps.googleusercontent.com" CredentialSecret="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" DataStoreLocation="Local disk" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="558,1009" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_3" KeyType="JSON" OAuthClient="UiPath" Password="notasecret" Services="Unselected">
+      <uga:GSuiteApplicationScope.AuthenticationScopes>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">https://www.googleapis.com/auth/spreadsheets</InArgument>
+        </scg:List>
+      </uga:GSuiteApplicationScope.AuthenticationScopes>
+      <uga:GSuiteApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ug:SimpleObjectContainer">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ug:SimpleObjectContainer" Name="GSuiteScope" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="524,857" sap2010:WorkflowViewState.IdRef="Sequence_44">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Read/Write Report to Spreadshet" sap:VirtualizedContainerService.HintSize="462,625" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Clear Range" sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uga:ClearRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" AuthScopesInvalid="False" DisplayName="Clear Range sampai Detail Pengembalian Pokok" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="ClearRange_4" Range="B1:D127" SheetName="Test Robot Pinang" SpreadsheetId="[spreadshet_id]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:ClearRange>
+                <uga:ClearRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" AuthScopesInvalid="False" DisplayName="Clear Range sampai Total Close Loan Account" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="ClearRange_5" Range="B130:D185" SheetName="Test Robot Pinang" SpreadsheetId="[spreadshet_id]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:ClearRange>
+                <uga:ClearRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" AuthScopesInvalid="False" DisplayName="Clear Range sampai Total Active Loan Account" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="ClearRange_6" Range="B187:D193" SheetName="Test Robot Pinang" SpreadsheetId="[spreadshet_id]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:ClearRange>
+                <uga:ClearRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" AuthScopesInvalid="False" DisplayName="Clear Range sampai akhir" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="ClearRange_11" Range="B195:E222" SheetName="Test Robot Pinang" SpreadsheetId="[spreadshet_id]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:ClearRange>
+              </Sequence>
+              <Parallel DisplayName="Write To Sheet" sap:VirtualizedContainerService.HintSize="400,52" sap2010:WorkflowViewState.IdRef="Parallel_15">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uga:WriteCell ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" AuthScopesInvalid="False" Cell="B1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteCell_1" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" Value="[kemarin_report]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteCell>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[total_disbursement]" DisplayName="Total Disbursment" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_1" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B3" />
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[total_pengembalian_pokok]" DisplayName="Total Pengembalian Pokok" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_2" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[daily_pengembalian_pokok]" DisplayName="Daily Pengembalian Pokok" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_3" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[daily_pokok_untilnow]" DisplayName="Daily Pengembalian Pokok Until Now" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_5" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[total_outstanding]" DisplayName="Total Outsanding" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_4" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[debitur_dpk]" DisplayName="Total Debitur DPK" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_6" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[debitur_dpk]" DisplayName="Total debitur DPK Bawah" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_7" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B9">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[debitur_npl]" DisplayName="Total Debitur NPL" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_8" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B10">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[debitur_npl]" DisplayName="Total Debitur NPL Bawah" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_9" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B11">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[amount_dpk]" DisplayName="Total Amount DPK" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_10" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B13">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[amount_dpk]" DisplayName="Total Amount DPK Bawah" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_11" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[amount_npl]" DisplayName="Total Amount NPL" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_12" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B16">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[amount_npl]" DisplayName="Total Amount NPL bawah" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_13" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B17">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[total_loan]" DisplayName="Total Number of Loan Accounts" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_14" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[information_autodebet]" DisplayName="Below Query Autodebet" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_15" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B21">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[overall_autodebet]" DisplayName="Overall Autoebet" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_16" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B36">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[closed_loan]" DisplayName="Total Number Closed Load Acc" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_17" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B66">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[daily_disburstment]" DisplayName="Daily Amount of Disbursment" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_18" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B67">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[daily_loan]" DisplayName="Daily Amount Loan Payment" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_19" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B68">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[daily_loanacct]" DisplayName="Daily Count of Created Loan Acct" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_20" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B69">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_pencairan]" DisplayName="Breakdown Pencarian" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_21" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="A72">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[number_debitur]" DisplayName="Numbr of Debitur" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_22" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B80">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[total_numberdebitur]" DisplayName="Toal Amount Number Debitur" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_23" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B81">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[num_ofdebitur]" DisplayName="Num of Debitur Total" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_24" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B82">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[all_active]" DisplayName="All Active /Outstanding Account" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_25" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B89">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[account_settled]" DisplayName="Accounts Settled" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_26" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B90">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[debitur_wo]" DisplayName="Total Debitur Write Off" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_27" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B91">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[amount_wo]" DisplayName="Amount Write Off" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_28" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B92">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[debitur_2022]" DisplayName="Debitur Write Off 2022" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_29" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B93">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[writeoff_2022]" DisplayName="Amount Write Off 2022" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_30" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B94">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[disburstment_2020]" DisplayName="Total Disbursement 1 Januari" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_31" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B95">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[disb_2021]" DisplayName="Jumlah Amt Disb 2022" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_32" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B98">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[bunga_2022]" DisplayName="Bunga 2022" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_33" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B99">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[total_bunga]" DisplayName="Total Pendapatan Bunga" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_34" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B100">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[brilink_untilnow]" DisplayName="Pengembalian Fee Brilink" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_35" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B101">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[brilink_2022]" DisplayName="Brilink 2022" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_36" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B102">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[disbursment_2022]" DisplayName="Total Disbursment 2022" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_37" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B103">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[detail_disbursment]" DisplayName="Detail Disbursment" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_38" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B104">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_disburstment]" DisplayName="Breakdown Disbursment" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_39" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B108">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[detail_outstanding]" DisplayName="Detail Outstanding" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_40" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B115">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_outstanding]" DisplayName="Breakdown Outstanding" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_41" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B119">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[detail_noadpk]" DisplayName="Detail NOA DPK" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_42" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B131">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_noadpk]" DisplayName="Breakdown NOA DPK" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_43" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B135">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[detail_noanpl]" DisplayName="Detail NOA NPL" sap:VirtualizedContainerService.HintSize="334,217" sap2010:WorkflowViewState.IdRef="WriteRange_44" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B142">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_noanpl]" DisplayName="Breakdown NOA NPL" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_45" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B146">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[detail_amountdpk]" DisplayName="Detail amount DPK" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_46" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B152">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_amountdpk]" DisplayName="Breakdown Amount DPK" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_47" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B156">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[detail_amountnpl]" DisplayName="Detail Amount NPL" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_48" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B163">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_amountnpl]" DisplayName="Breakdown Amount NPL  " sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_49" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B167">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[detail_activeacc]" DisplayName="Detail Active Accounts" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_50" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B172">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[total_loanacc]" DisplayName="Total Loan Acc " sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_51" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B176">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_closeacc]" DisplayName="breakdown Close ACC" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_52" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B179">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_activeacc]" DisplayName="Breakdown Active ACC" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_53" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B187">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_dis_pkss]" DisplayName="Breakdown Disbursment PKSS" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_57" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B196">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_out_pkss]" DisplayName="Breakdown Outstanding PKSS" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_58" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B208">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_dis_amount_pkss]" DisplayName="Breakdown Disbursment Amount PKSS" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_59" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B202">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+                <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[breakdown_out_amount_pkss]" DisplayName="Breakdown Outstanding Amount PKSS" sap:VirtualizedContainerService.HintSize="200,217" sap2010:WorkflowViewState.IdRef="WriteRange_60" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]" StartingCell="B214">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uga:WriteRange>
+              </Parallel>
+              <Delay Duration="00:01:10" sap:VirtualizedContainerService.HintSize="400,25" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <uga:ReadRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" AuthScopesInvalid="False" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="400,52" sap2010:WorkflowViewState.IdRef="ReadRange_7" IncludeHeaders="False" Range="B1:D217" Result="[dtTable_gsheet]" SheetName="[testing_sheet]" SpreadsheetId="[spreadshet_id]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uga:ReadRange>
+              <uga:ClearRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" AuthScopesInvalid="False" DisplayName="Clear Range" sap:VirtualizedContainerService.HintSize="400,52" sap2010:WorkflowViewState.IdRef="ClearRange_10" Range="B5:D239" SheetName="[templateSheet]" SpreadsheetId="[templateSheetID]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uga:ClearRange>
+              <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[dtTable_gsheet]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="400,52" sap2010:WorkflowViewState.IdRef="WriteRange_56" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[templateSheet]" SpreadsheetId="[templateSheetID]" StartingCell="B5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uga:WriteRange>
+            </Sequence>
+            <Sequence DisplayName="Coloum Count &amp; Write Report" sap:VirtualizedContainerService.HintSize="462,81" sap2010:WorkflowViewState.IdRef="Sequence_77">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uga:ReadRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Range="{x:Null}" AuthScopesInvalid="False" DisplayName="Coloum Count" sap:VirtualizedContainerService.HintSize="547,217" sap2010:WorkflowViewState.IdRef="ReadRange_3" IncludeHeaders="False" Result="[coloum_range]" SheetName="[reportSheet]" SpreadsheetId="[templateSheetID]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uga:ReadRange>
+              <Assign sap:VirtualizedContainerService.HintSize="547,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[coloum_count]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[coloum_range.ColumnCount]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="547,1017" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                <ui:IfElseIf.ConditionBlocks>
+                  <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                    <ui:IfElseIfBlock BlockType="If" Condition="[coloum_count&gt;=124 and coloum_count&lt;=127]">
+                      <ui:IfElseIfBlock.Then>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[coloum_count_final]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">["D"+convert.ToChar(coloum_count-39)+"5"]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ui:IfElseIfBlock.Then>
+                    </ui:IfElseIfBlock>
+                    <ui:IfElseIfBlock BlockType="ElseIf" Condition="[coloum_count&gt;=142 and coloum_count&lt;=157]">
+                      <ui:IfElseIfBlock.Then>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[coloum_count_final]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">["E"+convert.ToChar(coloum_count-65)+"5"]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ui:IfElseIfBlock.Then>
+                    </ui:IfElseIfBlock>
+                    <ui:IfElseIfBlock BlockType="ElseIf" Condition="[coloum_count&gt;=157 and coloum_count&lt;=184]">
+                      <ui:IfElseIfBlock.Then>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,193" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[coloum_count_final]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">["F"+convert.ToChar(coloum_count-91)+"5"]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ui:IfElseIfBlock.Then>
+                    </ui:IfElseIfBlock>
+                  </sc:BindingList>
+                </ui:IfElseIf.ConditionBlocks>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:IfElseIf>
+              <uga:WriteRange ContinueOnError="{x:Null}" GoogleSpreadsheet="{x:Null}" Request="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" DataTable="[dtTable_gsheet]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="547,217" sap2010:WorkflowViewState.IdRef="WriteRange_55" IncludeHeaders="False" IsInsideBatchUpdateScope="False" SheetName="[reportSheet]" SpreadsheetId="[templateSheetID]" StartingCell="[coloum_count_final]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uga:WriteRange>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uga:GSuiteApplicationScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uga:GSuiteApplicationScope>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Done" sap:VirtualizedContainerService.HintSize="558,52" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Automation Report After EOD Pinang Done&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MessageBox>
+  </Sequence>
+</Activity>
